@@ -10,7 +10,7 @@ function Contact() {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+    emailjs.init(import.meta.env.VITE_EMAIL);
   }, []);
 
   const sendEmail = (e) => {
@@ -20,7 +20,7 @@ function Contact() {
 
     const serviceid = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateid = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publickey= import.meta.env.VITE_EMAIL_KEY;
+    const publickey= import.meta.env.VITE_EMAIL;
 
     const templateParams = {
       from_name: form.current.user_name.value,

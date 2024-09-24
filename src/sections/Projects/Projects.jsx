@@ -1,5 +1,6 @@
 import styles from './ProjectsStyles.module.css';
 import skysnap from '../../assets/skysnap.webp';
+import fitnation from '../../assets/fitnationlogo.png'
 import splitbite from '../../assets/splitbite.webp';
 import ProjectCard from '../../common/ProjectCard';
 
@@ -10,15 +11,21 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={splitbite}
-          link="https://github.com/arjunxplorer/splitbite"
+          link="https://splitbite-rust.vercel.app/"
           h3="SplitBite"
           p="Bill Splitter"
         />
         <ProjectCard
           src={skysnap}
-          link="https://github.com/arjunxplorer/WeatherApp-API-Authentication-"
+          link="https://skysnap-nu.vercel.app/"
           h3="Sky Snap"
           p="Weather Secure"
+        />
+        <ProjectCard
+          src={fitnation}
+          link="https://fit-nation-alpha.vercel.app/"
+          h3="FitNation"
+          p="Coming Soon"
         />
       </div>
     </section>
